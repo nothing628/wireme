@@ -12,6 +12,7 @@ specifiers:
   underscore: ^1.13.4
   vite: ^3.1.0
   vue: ^3.2.37
+  vue-router: '4'
   vue-tsc: ^0.40.4
 
 dependencies:
@@ -20,6 +21,7 @@ dependencies:
   pinia-plugin-persist: 1.0.0_pinia@2.0.22+vue@3.2.39
   underscore: 1.13.4
   vue: 3.2.39
+  vue-router: 4.1.5_vue@3.2.39
 
 devDependencies:
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.2+vue@3.2.39
@@ -1038,6 +1040,15 @@ packages:
       '@vue/composition-api':
         optional: true
     dependencies:
+      vue: 3.2.39
+    dev: false
+
+  /vue-router/4.1.5_vue@3.2.39:
+    resolution: {integrity: sha512-IsvoF5D2GQ/EGTs/Th4NQms9gd2NSqV+yylxIyp/OYp8xOwxmU8Kj/74E9DTSYAyH5LX7idVUngN3JSj1X4xcQ==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.2.1
       vue: 3.2.39
     dev: false
 
