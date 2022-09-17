@@ -9,8 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "ky": "^0.31.3",
     "pinia": "^2.0.22",
     "pinia-plugin-persist": "^1.0.0",
+    "underscore": "^1.13.4",
     "vue": "^3.2.37"
   },
   "devDependencies": {
