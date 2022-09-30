@@ -13,15 +13,15 @@ import StatusListDivider from '../../components/StatusListDivider.vue';
         <MainTabs :active-index="1"/>
     </GradientBackground>
     <StatusListContainer>
-        <StatusListItem></StatusListItem>
+        <StatusListItem username="My Status" last-updated="Tap to add status updates" with-add is-readed></StatusListItem>
         <StatusListDivider>Recent updates</StatusListDivider>
-        <StatusListItem></StatusListItem>
-        <StatusListItem></StatusListItem>
+        <StatusListItem username="Marielle Wigington" last-updated="10 minutes ago"></StatusListItem>
+        <StatusListItem username="Marielle Wigington" last-updated="10 minutes ago"></StatusListItem>
         <StatusListDivider>Viewed updates</StatusListDivider>
-        <StatusListItem></StatusListItem>
-        <StatusListItem></StatusListItem>
+        <StatusListItem username="Marielle Wigington" last-updated="10 minutes ago" is-readed></StatusListItem>
+        <StatusListItem username="Marielle Wigington" last-updated="10 minutes ago" is-readed></StatusListItem>
         <StatusListDivider>Muted updates</StatusListDivider>
-        <StatusListItem></StatusListItem>
-        <StatusListItem></StatusListItem>
+        <StatusListItem username="Marielle Wigington" last-updated="10 minutes ago" is-readed is-muted></StatusListItem>
+        <StatusListItem username="Marielle Wigington" last-updated="10 minutes ago" is-readed is-muted></StatusListItem>
     </StatusListContainer>
 </template>
