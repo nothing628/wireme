@@ -5,6 +5,7 @@ import MainTabs from '../../components/MainTabs.vue';
 import StatusListContainer from '../../components/StatusListContainer.vue';
 import StatusListItem from '../../components/StatusListItem.vue';
 import StatusListDivider from '../../components/StatusListDivider.vue';
+import MyStatusListItem from '../../components/MyStatusListItem.vue';
 </script>
 
 <template>
@@ -13,7 +14,7 @@ import StatusListDivider from '../../components/StatusListDivider.vue';
         <MainTabs :active-index="1"/>
     </GradientBackground>
     <StatusListContainer>
-        <StatusListItem username="My Status" last-updated="Tap to add status updates" with-add is-readed></StatusListItem>
+        <MyStatusListItem />
         <StatusListDivider>Recent updates</StatusListDivider>
         <StatusListItem username="Marielle Wigington" last-updated="10 minutes ago"></StatusListItem>
         <StatusListItem username="Marielle Wigington" last-updated="10 minutes ago"></StatusListItem>
