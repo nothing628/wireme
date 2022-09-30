@@ -5,6 +5,10 @@ const routes: RouteRecordRaw[] = [
     path: "/",
     component: () => import("./pages/ChatListPage.vue"),
   },
+  {
+    path: "/chat/:chat_id",
+    component: () => import('./pages/MessagePage.vue'),
+  }
 ];
 
 const router = createRouter({
