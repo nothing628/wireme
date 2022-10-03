@@ -12,12 +12,17 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: "/login",
-    name: "login",
     component: () => import("./pages/auth/LoginPage.vue"),
     children: [
       {
         path: "",
+        name: "login",
         component: () => import("./pages/auth/login/ChooseLoginMethod.vue"),
+      },
+      {
+        path: "phone",
+        name: "login.phone",
+        component: () => import("./pages/auth/login/PhoneMethod.vue"),
       },
     ],
   },
