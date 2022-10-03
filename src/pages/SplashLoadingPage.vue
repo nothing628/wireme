@@ -18,7 +18,7 @@ useTimeout(2000, () => {
             <img class="w-full h-auto" src="../assets/SplashBackground.png" />
         </div>
 
-        <div class="w-full fixed bottom-[100px]">
+        <div class="fixed left-0 right-0 bottom-[100px]">
             <div class="w-[3.75rem] mx-auto">
                 <Loading />
             </div>
