@@ -3,6 +3,36 @@ import { RouteRecordRaw, createRouter, createWebHistory } from "vue-router";
 const routes: RouteRecordRaw[] = [
   {
     path: "/",
+    component: () => import('./pages/SplashLoadingPage.vue'),
+  },
+  {
+    path: "/getting-started",
+    component: () => import('./pages/auth/WelcomePage.vue'),
+  },
+  {
+    path: "/login",
+    component: () => import('./pages/auth/LoginPage.vue'),
+  },
+  {
+    path: "/register",
+    component: () => import('./pages/auth/RegisterPage.vue'),
+    children: [
+      {
+        path: "/profile",
+        component: () => import('./pages/auth/register/ProfilePage.vue'),
+      },
+      {
+        path: "/setup-pin",
+        component: () => import('./pages/auth/register/AddPinPage.vue'),
+      },
+      {
+        path: "/setup-fingerprint",
+        component: () => import('./pages/auth/register/AddFingerprintPage.vue'),
+      },
+    ],
+  },
+  {
+    path: "/chats",
     component: () => import("./pages/ChatListPage.vue"),
   },
   {
