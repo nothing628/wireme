@@ -24,6 +24,11 @@ const routes: RouteRecordRaw[] = [
         name: "login.phone",
         component: () => import("./pages/auth/login/PhoneMethod.vue"),
       },
+      {
+        path: "verify",
+        name: "login.verify",
+        component: () => import("./pages/auth/login/OtpVerifyPage.vue"),
+      },
     ],
   },
   {
@@ -46,6 +51,7 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: "/chats",
+    name: 'chat.list',
     component: () => import("./pages/ChatListPage.vue"),
   },
   {

@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import ButtonPrimary from '../../../components/ButtonPrimary.vue';
 import CheckboxButton from '../../../components/CheckboxButton.vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+const goToOtpVerificationPage = () => {
+    router.push({ name: 'login.verify' })
+}
 </script>
 
 <template>
@@ -20,7 +26,7 @@ import CheckboxButton from '../../../components/CheckboxButton.vue'
                     placeholder="+62 000 0000 0000" />
                 <CheckboxButton>Remember me</CheckboxButton>
 
-                <ButtonPrimary>Sign in</ButtonPrimary>
+                <ButtonPrimary @click="goToOtpVerificationPage">Sign in</ButtonPrimary>
             </div>
         </div>
         <div class="flex-none py-2">
