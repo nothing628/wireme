@@ -36,7 +36,19 @@ const routes: RouteRecordRaw[] = [
     component: () => import("./pages/auth/RegisterPage.vue"),
     children: [
       {
-        path: "/profile",
+        path: "",
+        name: "register",
+        component: () =>
+          import("./pages/auth/register/CreateNewAccountPage.vue"),
+      },
+      {
+        path: "verify",
+        name: "register.verify",
+        component: () => import("./pages/auth/register/OtpVerifyPage.vue"),
+      },
+      {
+        path: "profile",
+        name: "register.profile",
         component: () => import("./pages/auth/register/ProfilePage.vue"),
       },
       {
@@ -51,7 +63,7 @@ const routes: RouteRecordRaw[] = [
   },
   {
     path: "/chats",
-    name: 'chat.list',
+    name: "chat.list",
     component: () => import("./pages/ChatListPage.vue"),
   },
   {

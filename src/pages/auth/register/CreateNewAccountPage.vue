@@ -5,10 +5,10 @@ import { useRouter } from 'vue-router'
 
 const router = useRouter()
 const goToOtpVerificationPage = () => {
-    router.push({ name: 'login.verify' })
+    router.push({ name: 'register.verify' })
 }
-const goToRegisterPage = () => {
-    router.replace({ name: 'register' })
+const goToLoginPage = () => {
+    router.replace({ name: 'login' })
 }
 </script>
 
@@ -20,7 +20,7 @@ const goToRegisterPage = () => {
             </div>
         </div>
         <div class="flex-1">
-            <h1 class="text-[#212121] text-center text-2xl font-bold">Login to Your Account</h1>
+            <h1 class="text-[#212121] text-center text-2xl font-bold">Create New Account</h1>
         </div>
         <div class="flex-1">
             <div class="flex flex-col items-center">
@@ -29,12 +29,12 @@ const goToRegisterPage = () => {
                     placeholder="+62 000 0000 0000" />
                 <CheckboxButton>Remember me</CheckboxButton>
 
-                <ButtonPrimary @click="goToOtpVerificationPage">Sign in</ButtonPrimary>
+                <ButtonPrimary @click="goToOtpVerificationPage">Sign up</ButtonPrimary>
             </div>
         </div>
         <div class="flex-none py-2">
-            <p class="text-[#9E9E9E] text-sm text-center font-normal">Don't have an account? <a
-                    @click="goToRegisterPage" class="text-[#246BFD] font-medium">Sign up</a></p>
+            <p class="text-[#9E9E9E] text-sm text-center font-normal">Already have an account? <a @click="goToLoginPage"
+                    class="text-[#246BFD] font-medium">Sign in</a></p>
         </div>
     </div>
 </template>

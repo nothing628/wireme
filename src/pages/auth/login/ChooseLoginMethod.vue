@@ -8,6 +8,9 @@ const router = useRouter()
 const goToLoginWithPhone = () => {
     router.push({ name: 'login.phone' })
 }
+const goToRegisterPage = () => {
+    router.replace({ name: 'register' })
+}
 </script>
 
 <template>
@@ -41,7 +44,7 @@ const goToLoginWithPhone = () => {
 
         <div class="flex-none py-2">
             <p class="text-[#9E9E9E] text-sm text-center font-normal">Don't have an account? <a
-                    class="text-[#246BFD] font-medium">Sign up</a></p>
+                    @click="goToRegisterPage" class="text-[#246BFD] font-medium">Sign up</a></p>
         </div>
     </div>
 </template>
